@@ -7,8 +7,8 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
-import IntroScreenPager from './Screens/Intro/IntroScreenNavigator';
+import {SafeAreaView, StatusBar, View} from 'react-native';
+// import IntroScreenPager from './Screens/Intro/IntroScreenNavigator';
 
 import {
   Header,
@@ -22,8 +22,9 @@ const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <IntroScreenPager></IntroScreenPager>
+      <SafeAreaView style={{backgroundColor: 'pink'}}>
+        {/* <IntroScreenPager></IntroScreenPager> */}
+        <View style={{flex:1, backgroundColor: 'red'}} />
       </SafeAreaView>
     </>
   );

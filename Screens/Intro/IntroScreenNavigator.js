@@ -1,18 +1,21 @@
 import React from 'react';
-import {View, StyleSheet, Text, Dimensions} from 'react-native';
-// import {createStackNavigator} from '@react-navigation/stack';
+import {View, StyleSheet, Dimensions} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 import IntroScreen from './introScreen';
 import ViewPager from '@react-native-community/viewpager';
+import {HomeScreen} from '../Home/homeScreen';
 
-// const Stack = createStackNavigator();
+const Stack = createStackNavigator();
 
 // const IntroScreenNavigator = () => {
 //   return (
-//     <Stack.Navigator>
-//       <Stack.Screen name="IntroFirst" component={IntroScreen} />
-//       <Stack.Screen name="IntroSecond" component={IntroScreen} />
-//       <Stack.Screen name="IntroThird" component={IntroScreen} />
-//     </Stack.Navigator>
+//     <NavigationContainer>
+//       <Stack.Navigator>
+//         <Stack.Screen name="Intro" component={IntroScreenPager} />
+//         <Stack.Screen name="Home" component={HomeScreen} />
+//       </Stack.Navigator>
+//     </NavigationContainer>
 //   );
 // };
 
@@ -44,3 +47,4 @@ const styles = StyleSheet.create({
 });
 
 export default IntroScreenPager;
+// export default IntroScreenNavigator;
