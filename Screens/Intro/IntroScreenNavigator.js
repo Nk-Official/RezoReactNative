@@ -3,7 +3,7 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import {Color} from '../../Helper/Color/color';
-import HomeScreen from '../Home/homeScreen';
+import TabBarRezo from '../TabBar/tabBarRezo';
 import IntroScreenPager from './introScreenPager';
 
 const Stack = createStackNavigator();
@@ -18,8 +18,8 @@ const IntroScreenNavigator = () => {
           options={{headerShown: false}}
         />
         <Stack.Screen
-          name="Home"
-          component={HomeScreen}
+          name="tabbarRezo"
+          component={TabBarRezo}
           options={{
             headerShown: true,
             headerTintColor: '#fff',

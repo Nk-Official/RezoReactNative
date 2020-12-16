@@ -32,7 +32,7 @@ const ImageView = () => {
   return (
     <View style={style.imageContainer}>
       <Image
-        style={style.imagestyle}
+        style={style.imageStyle}
         source={require('../../Assets/Intro/img_intro_one.png')}
       />
     </View>
@@ -41,7 +41,7 @@ const ImageView = () => {
 const TextView = () => {
   return (
     <View style={style.textView}>
-      <Text style={style.welcomeText}>WELCOME TO REZO</Text>
+      <Text style={style.welcomeText}>WELCOME TO RezoApp</Text>
       <Text style={style.welcomeText}>
         Platform designed to allow service providers to showcase their services
         and clients to look for a particular service provider.
@@ -67,7 +67,7 @@ const style = StyleSheet.create({
     color: 'gray',
     textDecorationLine: 'underline',
   },
-  imagestyle: {
+  imageStyle: {
     width: Dimensions.get('window').width,
     flex: 1,
   },

@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   View,
-  Image,
+  Text,
   StyleSheet,
   Dimensions,
   ImageBackground,
@@ -26,17 +26,13 @@ const style = StyleSheet.create({
   imagestyle: {
     width: '100%', //Dimensions.get('window').width,
     // resizeMode: 'cover',
-    flex: 0.4,
-    // height:'100%',
+    flex: 1,
+    height: '35%',
   },
   list: {
     // position: 'absolute',
-    marginTop: 200,
-    // left: '30%',
-    // zIndex: 1,
-    width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height - 200 - 100,
-    // flex: 1,
+    marginTop: '40%',
+    backgroundColor: 'transparent',
   },
 });
 

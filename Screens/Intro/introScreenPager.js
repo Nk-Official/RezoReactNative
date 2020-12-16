@@ -17,28 +17,30 @@ const IntroScreenPager = ({navigation}) => {
         <IntroScreen
           key="1"
           onSkipAction={() => {
-            navigation.navigate('Home');
+            navigation.navigate('tabbarRezo');
             navigation.reset({
               index: 0,
-              routes: [{name: 'Home'}],
+              routes: [{name: 'tabbarRezo'}],
             });
           }}
         />
         <IntroScreen
           key="2"
           onSkipAction={() => {
+            navigation.navigate('tabbarRezo');
             navigation.reset({
               index: 0,
-              routes: [{name: 'Home'}],
+              routes: [{name: 'tabbarRezo'}],
             });
           }}
         />
         <IntroScreen
           key="3"
           onSkipAction={() => {
+            navigation.navigate('tabbarRezo');
             navigation.reset({
               index: 0,
-              routes: [{name: 'Home'}],
+              routes: [{name: 'tabbarRezo'}],
             });
           }}
         />
