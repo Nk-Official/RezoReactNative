@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React from 'react';
 import {
   View,
@@ -8,20 +9,20 @@ import {
   Dimensions,
 } from 'react-native';
 
-const IntroScreen = () => {
+const IntroScreen = ({onSkipAction}) => {
   return (
     <View style={style.container}>
-      <CustomSkipButton />
+      <CustomSkipButton onPress={onSkipAction} />
       <ImageView />
       <TextView />
     </View>
   );
 };
 
-const CustomSkipButton = () => {
+const CustomSkipButton = ({onPress}) => {
   return (
     <View style={style.skipButtonView}>
-      <TouchableOpacity onPress={() => {}}>
+      <TouchableOpacity onPress={onPress}>
         <Text style={style.skipText}>Skip</Text>
       </TouchableOpacity>
     </View>
@@ -54,6 +55,7 @@ const style = StyleSheet.create({
     width: Dimensions.get('window').width,
     height: Dimensions.get('window').height,
     // justifyContent: 'center',
+    paddingTop: 50,
   },
   skipButtonView: {
     flexDirection: 'column',

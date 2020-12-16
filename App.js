@@ -7,8 +7,11 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StatusBar, View} from 'react-native';
-// import IntroScreenPager from './Screens/Intro/IntroScreenNavigator';
+import {StatusBar} from 'react-native';
+import IntroScreenNavigator from './Screens/Intro/IntroScreenNavigator.js';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+import HomeScreen from './Screens/Home/homeScreen';
+// import {SafeAreaView} from 'react-native-safe-area-view'; //https://github.com/react-navigation/react-native-safe-area-view
 
 import {
   Header,
@@ -22,10 +25,10 @@ const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={{backgroundColor: 'pink'}}>
-        {/* <IntroScreenPager></IntroScreenPager> */}
-        <View style={{flex:1, backgroundColor: 'red'}} />
-      </SafeAreaView>
+      <SafeAreaProvider>
+        <IntroScreenNavigator />
+        {/* <HomeScreen></HomeScreen> */}
+      </SafeAreaProvider>
     </>
   );
 };
