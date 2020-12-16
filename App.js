@@ -11,6 +11,7 @@ import {StatusBar} from 'react-native';
 import IntroScreenNavigator from './Screens/Intro/IntroScreenNavigator.js';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import HomeScreen from './Screens/Home/homeScreen';
+import Splash from "./Screens/Splash/Splash";
 // import {SafeAreaView} from 'react-native-safe-area-view'; //https://github.com/react-navigation/react-native-safe-area-view
 
 import {
@@ -26,7 +27,8 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaProvider>
-        <IntroScreenNavigator />
+      <Splash></Splash>
+        {/* <IntroScreenNavigator /> */}
         {/* <HomeScreen></HomeScreen> */}
       </SafeAreaProvider>
     </>
